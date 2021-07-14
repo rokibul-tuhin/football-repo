@@ -1,0 +1,143 @@
+/* Common Utilities */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+a:visited{
+    color: transparent;
+}
+/* Top Section Styles */
+.Main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 60px;
+ 
+}
+.row{
+    display: table;
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size:cover;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+.intro-text{
+    font-size: 50px;
+    color: whitesmoke;
+    margin-left: 150px;
+}
+button{
+    border: none;
+    color: whitesmoke;
+    padding: 16px 32px;
+    text-align: center;
+    background-color: #E02C6D;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+button:hover{
+    background-color:white ;
+    color: #E02C6D;
+}
+.column img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+/* Player-card-section */
+.top-player-stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.player-card {
+     width: 30%;
+    height: 470px;
+    border: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .player-card img{
+      border-radius: 5px;
+      width: 300px;
+      height: 250px;
+  }
+ .player-info{
+    padding: 2px 16px;
+  }
+  .row-card{
+    display: table;
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+.col-card{
+    float: left;
+    width: 30%;
+    margin: 5px;
+}
+
+/* MVP Section */
+.MVP{
+    width: 100%;
+    background-size: 100%;
+}
+/* FOOTER-PORTION STYLES */
+footer{
+    display: block;
+    justify-content: center;
+    margin-top: 100px;
+}
+.row-image{
+   width: 500px;
+   height: 200px;
+}
+.row-image img{
+        display: block;
+        margin-left: 400px;
+        margin-right: 45%;
+        width: 100%;
+}
+.social-icon{
+    display: block;
+    margin-left: 600px;
+    margin-top: -80px;
+    padding-left: 20px;
+    padding-right: 30px;   
+}
+
+.copyright{
+    margin-left:450px;
+}
+/*----------------
+ Media quaries
+---------------- */
+@media only screen and (max-width:688px) {
+    .Query{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        display: grid;
+        width: 50px;
+        align-items: center;   
+    }
+}
